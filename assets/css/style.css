@@ -1,0 +1,117 @@
+/* header  */
+.header img{
+  width: 100%;
+  height: 70px;
+  object-fit: contain;
+}
+.header a{
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 18px;
+  text-align: center;
+}
+.header ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: var(--color-one);
+  z-index: 1000;
+  position: sticky;
+  top:0
+
+
+}
+.header ul li {
+  padding: 30px 0;
+  text-align: center;
+}
+.header ul li:hover{
+  background-color: aquamarine;
+  transition: all 0.6s;
+
+
+}
+.header .row {
+  align-items: center;
+}
+.header .inner-contact,.inner-dn{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.header .inner-phone,.inner-sign{
+  margin-left: 10px;
+
+}
+@media (max-width:991.98px) {
+  .header .inner-list{
+    display: none;
+  }
+}
+/* end header  */
+
+/* section1  */
+.section1 {
+  background-image: url(../image/gioithieu1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+  background-size: cover;
+  padding-top: 100px;
+  
+}
+
+.section1 .inner-wrap{
+  align-items: center;
+}
+.section1 .inner-wrap .inner-desc{
+  font-size: 65px;
+  text-transform: uppercase;
+  color: #ffc107;
+  font-weight: 800;
+  text-align: center;
+}
+.section1 .inner-wrap .inner-content{
+  font-size: 20px;
+  text-align: center;
+  padding: 0 50px;
+  width: 80%;
+  margin: 0 auto;
+  color:#fff;
+  font-weight: 500;
+
+}
+/* .section1 .inner-button{
+  margin-top: 60px;
+  margin-bottom: 20px;
+  justify-content: center;
+} */
+/* .section1 .inner-button button {
+  margin-right: 20px;
+  width: 300px;
+  text-transform: uppercase;
+
+} */
+/* end section1  */
+
+/* button  */
+button {
+  background-color: antiquewhite;
+  padding: 20px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 15px;
+  border: none;
+  outline:none;
+}
+button:hover{
+  background-color: rgb(155, 127, 255);
+  color: #fff;
+}
+
+
+/* end button  */
+
