@@ -15,9 +15,7 @@
   margin-bottom: 50px;
   border-bottom: 1px solid #fff;
 }
-.feedback .fullname, .email, .phone{
-  /* padding: 40px; */
-}
+
 .feedback #fullname, #email, #phone{
   background-color: #fff;
   padding: 15px 30px;
@@ -41,11 +39,24 @@
 }
 .feedback .button{
   text-align: center;
+
 }
 .feedback .button button {
   padding: 15px 30px;
   width: 60%;
   margin-bottom: 50px;
+  border-radius: 15px;
+  font-size: 20px;
+  transition: all 0.6s;
+  border: none;
+  outline: none;
+  background-color: aqua;
+  font-weight: 600;
+}
+.feedback .button button:hover{
+  background-color: var(--color-text);
+  color: #fff;
+
 }
 @media (max-width: 767.98px) {
   .feedback .button button{
