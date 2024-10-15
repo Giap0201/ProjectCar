@@ -58,9 +58,10 @@
   background-image: url(../image/gioithieu1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 150px 0;
+  padding: 100px 0;
   background-size: cover;
   padding-top: 100px;
+  margin-bottom: 100px;
   
 }
 
@@ -84,34 +85,68 @@
   font-weight: 500;
 
 }
-/* .section1 .inner-button{
-  margin-top: 60px;
-  margin-bottom: 20px;
-  justify-content: center;
-} */
-/* .section1 .inner-button button {
-  margin-right: 20px;
-  width: 300px;
-  text-transform: uppercase;
-
-} */
-/* end section1  */
-
-/* button  */
-button {
-  background-color: antiquewhite;
-  padding: 20px 50px;
+.section1 .button{
+  /* background-color: #ffc107; */
+  margin-top: 50px;
+  text-align: center;
+}
+.section1 .button button {
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  background-color: aqua;
   font-size: 20px;
   font-weight: 600;
-  border-radius: 15px;
-  border: none;
-  outline:none;
+  width: 50%;
+  transition: all 0.6s;
 }
-button:hover{
-  background-color: rgb(155, 127, 255);
+.section1 .button button:hover{
+  background: #4507ff;
   color: #fff;
 }
 
+/* end section1  */
+
+/* button  */
+
 
 /* end button  */
+
+/* end  */
+.section-end {
+  padding: 100px;
+  background-color: #2340C4;
+}
+.section-end .inner-sub {
+  text-transform: uppercase;
+  color: #fff;
+}
+.section-end .inner-desc{
+  color: #fff;
+  
+}
+.section-end #email {
+  padding: 20px 30px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.section-end #button {
+  background-color: aqua;
+  font-size: 18px;
+  padding: 20px 30px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+ 
+
+}
+.section-end .box1 {
+  align-items: center;
+  justify-content: center;
+}
+
+/* end end */
 
