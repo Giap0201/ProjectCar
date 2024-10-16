@@ -16,7 +16,7 @@
   border-bottom: 1px solid #fff;
 }
 
-.feedback #fullname, #email, #phone{
+.feedback #fullname, #email1, #phone{
   background-color: #fff;
   padding: 15px 30px;
   border-radius: 15px;
