@@ -1,54 +1,88 @@
 /* header  */
-.header img{
+
+
+.header .inner-logo{
   width: 100%;
-  height: 70px;
+  height: auto;
+  max-width: 200px;
+}
+.header .inner-logo img{
+  width: 100%;
+  height: 50px;
   object-fit: contain;
+}
+
+.inner-list-icon{
+  display: none;
+}
+.header ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header ul li {
+  width: 18%;
+  text-align: center;
+  padding: 23px 2px;
+}
+.header  ul li a{
+  height: 100%;
 }
 .header a{
   text-decoration: none;
   color: var(--color-text);
   font-size: 18px;
-  text-align: center;
-}
-.header ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
+.header ul li:hover{
+  background-color: #ffc107;
+}
+.header ul li.active{
+  background-color: #ffc107;
+}
 .header {
   background-color: var(--color-one);
   z-index: 1000;
   position: sticky;
-  top:0
-
-
+  top:0;
+  font-weight: 600;
+  font-size: 18px;
+  max-height: 90px;
 }
-.header ul li {
-  padding: 30px 0;
-  text-align: center;
-}
-.header ul li:hover{
-  background-color: aquamarine;
-  transition: all 0.6s;
 
-
-}
 .header .row {
   align-items: center;
 }
 .header .inner-contact,.inner-dn{
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
-.header .inner-phone,.inner-sign{
-  margin-left: 10px;
 
+.header .inner-contact .inner-phone{
+  margin-left: 10px;
+}
+.header .inner-dn .inner-sign{
+  margin-left: 15px;
+  padding: 23px 0;
+}
+
+@media (max-width:1199.98px) {
+  .header .inner-an{
+    display: none;
+  }
 }
 @media (max-width:991.98px) {
-  .header .inner-list{
+  .header .inner-an{
+    display: block;
+  }
+  .header .inner-list {
     display: none;
+  }
+  .inner-list-icon{
+    display: block;
+    font-size: 1.5em;
   }
 }
 /* end header  */
