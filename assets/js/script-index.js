@@ -9,6 +9,14 @@ function show() {
     menu.style.display = 'block';
   }
 }
+//khi click ra ngoai thi an di
+document.addEventListener('click', function(event) {
+  if (!iconMenu.contains(event.target) && !menu.contains(event.target)) {
+    menu.style.display = 'none';
+  }
+});
+
+
 
 
 
