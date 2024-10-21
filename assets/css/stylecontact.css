@@ -4,6 +4,8 @@
   background-color: #363C3F;
   padding: 100px 0;
   padding-bottom: 50px;
+  /* max-width: 100vh;khong tran ra man hinh */
+  /* overflow-y: hidden; */
 }
 .feedback .inner-feedback{
   padding: 0;
@@ -58,11 +60,14 @@
   color: #fff;
 
 }
-@media (max-width: 767.98px) {
-  .feedback .button button{
-    width: 100%;
+@media (max-width:991.98px) {
+  .feedback .inner-feedback{
+    font-size: 70px;
+    letter-spacing: 3px;
   }
 }
+
+
 
 /* end feedback  */
 

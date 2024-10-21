@@ -15,8 +15,25 @@ document.addEventListener('click', function(event) {
     menu.style.display = 'none';
   }
 });
+const sec4List1 = document.querySelector(".list-1");
+const sec4List2 = document.querySelector(".list-2");
+const sec4List3 = document.querySelector(".list-3");
+const content2 = document.querySelector(".section-4 .section4-list2");
+const content1 = document.querySelector(".section-4 .inner-box");
+content2.style.display = 'none';
 
-
-
-
-
+sec4List1.addEventListener('click',show1);
+sec4List2.addEventListener('click',show2);
+function show2(){
+  content1.style.display = 'none';
+  content2.style.display = 'flex';
+  sec4List2.classList.add('active');
+  sec4List1.classList.remove('active');
+}
+function show1(){
+  content1.style.display = 'flex';
+  content2.style.display = 'none';
+  sec4List1.classList.add('active');
+  sec4List2.classList.remove('active');
+  
+}
