@@ -57,11 +57,14 @@
               <div class="inner-phone">023321312</div>
             </div>
             <div class="inner-dn">
+
               <a href="#"><i class="fa-regular fa-circle-user"></i></a>
               <a href="#" class="inner-sign">Đăng Nhập</a>
             </div>
             <div class="inner-list">
-              <i class="fa-solid fa-bars"></i>
+              <a href="#"><i class="fa-solid fa-phone"></i></a>
+              <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+              <i class="fa-solid fa-bars" id="togger"></i>
             </div>
           </div>
         </div>
@@ -90,25 +93,23 @@
           </div>
         </div>
       </div>
-
     </div>
   </header>
   <!-- end header  -->
+
+
   <!-- section1 -->
   <section class="section1">
     <div class="container">
       <div class="row">
-        <div class="inner-wrap col-xl-12">
-          <p class="inner-desc">welcome to utcar</p>
+        <div class="inner-wrap col-12">
+          <h1 class="inner-desc">welcome to utcar</h1>
           <p class="inner-content">Khám phá bộ sưu tập ô tô từ các thương hiệu hàng đầu với giá cạnh tranh. Chúng tôi
             cung cấp giải pháp mua xe toàn diện, từ tư vấn chuyên nghiệp, hỗ trợ tài chính đến dịch vụ bảo dưỡng tận
             tâm. Hãy bắt đầu hành trình của bạn với chiếc xe mơ ước ngay hôm nay!</p>
           </p>
         </div>
-        <div class="button col-xl-6">
-          <button type="submit">Tư vẫn miễn phí</button>
-        </div>
-        <div class="button col-xl-6">
+        <div class="button col-12">
           <button type="submit">Mua ngay</button>
         </div>
       </div>
@@ -116,15 +117,64 @@
   </section>
 
   <!-- end section1  -->
+  <!-- section 2  -->
+  <section class="section-2">
+    <div class="container">
+      <div class="row inner-wrap">
+        <div class="inner-image col-xl-6 col-lg-6 col-12">
+          <img src="assets/image/carsection1.png" alt="car">
+        </div>
+        <div class="inner-content col-xl-6 col-lg-6 col-12">
+          <h2 class="inner-header">Chợ ô tô lớn nhất Việt Nam</h2>
+          <div class="inner-box">
+            <div class="box">
+              <div class="inner-icon">
+                <i class="fa-solid fa-ranking-star"></i>
+              </div>
+              <div class="inner-desc">
+                <h3>Chất lượng, Giá trị!</h3>
+                <div class="inner-ds">
+                  Xe đẳng cấp, chất lượng cao từ các thương hiệu lớn với mức giá hợp lý.
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="inner-icon">
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <div class="inner-desc">
+                <h3>Thương hiệu đẳng cấp!</h3>
+                <div class="inner-ds">
+                  Sở hữu ngay xe từ những thương hiệu danh tiếng, khẳng định phong cách của bạn.
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="inner-icon">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+              </div>
+              <div class="inner-desc">
+                <h3>Giá tốt, Ưu đãi lớn!</h3>
+                <div class="inner-ds">
+                  Chất lượng vượt trội, giá cả phải chăng với nhiều ưu đãi khi mua xe hôm nay!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+  </section>
+  <!-- end section2  -->
 
   <!-- section3 -->
   <section class="section3">
-    <div class="container-fluid">
+    <div class="container" id="container">
       <h2 class="inner-header">Khám phá xe nổi bật</h2>
-      <div class="row">
-        <div class="mp col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-          <a href="#">
+      <div class="row" id="box-section3">
+        <div class="mp col-xl-4 col-lg-4 col-md-6 col-sm-6 col-9">
+          <a href="#" id="link">
             <div class="inner-box ">
               <div class="inner-image">
                 <img src="assets/image/xe1.webp" alt="xe1">
@@ -180,8 +230,8 @@
             </div>
           </a>
         </div>
-        <div class="mp col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-          <a href="#">
+        <div class="mp col-xl-4 col-lg-4 col-md-6 col-sm-6 col-9">
+          <a href="#" id="link">
             <div class="inner-box ">
               <div class="inner-image">
                 <img src="assets/image/xe1.webp" alt="xe1">
@@ -237,8 +287,8 @@
             </div>
           </a>
         </div>
-        <div class="mp col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-          <a href="#">
+        <div class="mp col-xl-4 col-lg-4 col-md-6 col-sm-6 col-9">
+          <a href="#" id="link">
             <div class="inner-box ">
               <div class="inner-image">
                 <img src="assets/image/xe1.webp" alt="xe1">
@@ -294,293 +344,6 @@
             </div>
           </a>
         </div>
-        <div class="mp col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-          <a href="#">
-            <div class="inner-box ">
-              <div class="inner-image">
-                <img src="assets/image/xe1.webp" alt="xe1">
-              </div>
-              <div class="inner-sales">616 Triệu <span>Chỉ từ 5.3 triệu/tháng</span></div>
-              <div class="inner-name">
-                Kia Carens 1.5G IVT 2023
-              </div>
-              <div class="inner-content">
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon1.png" alt="icon1">
-                    </div>
-                    <div class="inner-d">8.300 km</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon4.png" alt="icon4">
-                    </div>
-                    <div class="inner-d">5 chỗ</div>
-                  </div>
-                </div>
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon2.png" alt="icon2">
-                    </div>
-                    <div class="inner-d">Số sàn 5 cấp</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon5.png" alt="icon5">
-                    </div>
-                    <div class="inner-d">Xe xăng</div>
-                  </div>
-                </div>
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon3.png" alt="icon3">
-                    </div>
-                    <div class="inner-d">Biển tĩnh</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon6.png" alt="icon6">
-                    </div>
-                    <div class="inner-d">CN Đà Nẵng</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="mp col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-          <a href="#">
-            <div class="inner-box ">
-              <div class="inner-image">
-                <img src="assets/image/xe1.webp" alt="xe1">
-              </div>
-              <div class="inner-sales">616 Triệu <span>Chỉ từ 5.3 triệu/tháng</span></div>
-              <div class="inner-name">
-                Kia Carens 1.5G IVT 2023
-              </div>
-              <div class="inner-content">
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon1.png" alt="icon1">
-                    </div>
-                    <div class="inner-d">8.300 km</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon4.png" alt="icon4">
-                    </div>
-                    <div class="inner-d">5 chỗ</div>
-                  </div>
-                </div>
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon2.png" alt="icon2">
-                    </div>
-                    <div class="inner-d">Số sàn 5 cấp</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon5.png" alt="icon5">
-                    </div>
-                    <div class="inner-d">Xe xăng</div>
-                  </div>
-                </div>
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon3.png" alt="icon3">
-                    </div>
-                    <div class="inner-d">Biển tĩnh</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon6.png" alt="icon6">
-                    </div>
-                    <div class="inner-d">CN Đà Nẵng</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="mp col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-          <a href="#">
-            <div class="inner-box ">
-              <div class="inner-image">
-                <img src="assets/image/xe1.webp" alt="xe1">
-              </div>
-              <div class="inner-sales">616 Triệu <span>Chỉ từ 5.3 triệu/tháng</span></div>
-              <div class="inner-name">
-                Kia Carens 1.5G IVT 2023
-              </div>
-              <div class="inner-content">
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon1.png" alt="icon1">
-                    </div>
-                    <div class="inner-d">8.300 km</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon4.png" alt="icon4">
-                    </div>
-                    <div class="inner-d">5 chỗ</div>
-                  </div>
-                </div>
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon2.png" alt="icon2">
-                    </div>
-                    <div class="inner-d">Số sàn 5 cấp</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon5.png" alt="icon5">
-                    </div>
-                    <div class="inner-d">Xe xăng</div>
-                  </div>
-                </div>
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon3.png" alt="icon3">
-                    </div>
-                    <div class="inner-d">Biển tĩnh</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon6.png" alt="icon6">
-                    </div>
-                    <div class="inner-d">CN Đà Nẵng</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="mp col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-          <a href="#">
-            <div class="inner-box ">
-              <div class="inner-image">
-                <img src="assets/image/xe1.webp" alt="xe1">
-              </div>
-              <div class="inner-sales">616 Triệu <span>Chỉ từ 5.3 triệu/tháng</span></div>
-              <div class="inner-name">
-                Kia Carens 1.5G IVT 2023
-              </div>
-              <div class="inner-content">
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon1.png" alt="icon1">
-                    </div>
-                    <div class="inner-d">8.300 km</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon4.png" alt="icon4">
-                    </div>
-                    <div class="inner-d">5 chỗ</div>
-                  </div>
-                </div>
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon2.png" alt="icon2">
-                    </div>
-                    <div class="inner-d">Số sàn 5 cấp</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon5.png" alt="icon5">
-                    </div>
-                    <div class="inner-d">Xe xăng</div>
-                  </div>
-                </div>
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon3.png" alt="icon3">
-                    </div>
-                    <div class="inner-d">Biển tĩnh</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon6.png" alt="icon6">
-                    </div>
-                    <div class="inner-d">CN Đà Nẵng</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="mp col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-          <a href="#">
-            <div class="inner-box ">
-              <div class="inner-image">
-                <img src="assets/image/xe1.webp" alt="xe1">
-              </div>
-              <div class="inner-sales">616 Triệu <span>Chỉ từ 5.3 triệu/tháng</span></div>
-              <div class="inner-name">
-                Kia Carens 1.5G IVT 2023
-              </div>
-              <div class="inner-content">
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon1.png" alt="icon1">
-                    </div>
-                    <div class="inner-d">8.300 km</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon4.png" alt="icon4">
-                    </div>
-                    <div class="inner-d">5 chỗ</div>
-                  </div>
-                </div>
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon2.png" alt="icon2">
-                    </div>
-                    <div class="inner-d">Số sàn 5 cấp</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon5.png" alt="icon5">
-                    </div>
-                    <div class="inner-d">Xe xăng</div>
-                  </div>
-                </div>
-                <div class="content1">
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon3.png" alt="icon3">
-                    </div>
-                    <div class="inner-d">Biển tĩnh</div>
-                  </div>
-                  <div class="inner-speed">
-                    <div class="inner-image">
-                      <img src="assets/image/icon6.png" alt="icon6">
-                    </div>
-                    <div class="inner-d">CN Đà Nẵng</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-
       </div>
       <a href="#">
         <div class="add">Xem thêm</div>
@@ -610,7 +373,7 @@
         </div>
         <div class="col-12">
           <div class="inner-box row">
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-8">
               <div class="box1">
                 <p>1</p>
                 <div class="inner-icon">
@@ -623,8 +386,9 @@
                   Duyệt trực tuyến những chiếc xe quản lí cẩn thận và kiểm tra chuyên nghiệp của chúng tôi.
                 </div>
               </div>
+
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-8">
               <div class="box1">
                 <p>2</p>
                 <div class="inner-icon">
@@ -639,7 +403,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-8">
               <div class="box1">
                 <p>3</p>
                 <div class="inner-icon">
@@ -653,7 +417,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-8">
               <div class="box1">
                 <p>4</p>
                 <div class="inner-icon">
@@ -668,7 +432,7 @@
             </div>
           </div>
           <div class="inner-box row section4-list2">
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-8">
               <div class="box1">
                 <p>1</p>
                 <div class="inner-icon">
@@ -682,7 +446,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-8">
               <div class="box1">
                 <p>2</p>
                 <div class="inner-icon">
@@ -696,7 +460,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-8">
               <div class="box1">
                 <p>3</p>
                 <div class="inner-icon">
@@ -710,7 +474,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-8">
               <div class="box1">
                 <p>4</p>
                 <div class="inner-icon">
@@ -725,11 +489,72 @@
               </div>
             </div>
           </div>
+          <div class="row .inner-box .section4-list3">
+
+          </div>
         </div>
       </div>
   </section>
   <!-- end section4  -->
 
+  <!-- section5  -->
+  <section class="section-5">
+    <div class="container">
+      <div class="row" id="inner-wrap">
+        <h2 class="inner-feedback col-12">
+          Khách hàng nói về UTCAR
+        </h2>
+        <div class="inner-content col-10" id="feedback-content0">
+          <div class="inner-p">
+            Tôi rất hài lòng với trải nghiệm mua xe tại đây. Từ khâu tư vấn cho đến khi nhận xe, nhân viên đều rất tận
+            tâm
+            và chuyên nghiệp. Chiếc xe tôi chọn không chỉ đẹp về thiết kế mà còn hoạt động rất tốt. Tôi chắc chắn sẽ
+            quay
+            lại khi cần mua xe lần nữa và sẽ giới thiệu cho bạn bè, người thân.
+          </div>
+          <div class="inner-athor">
+            Nguyễn Hữu Giáp
+          </div>
+          <div class="inner-it">Student UTCIT</div>
+        </div>
+        <div class="inner-content col-10" id="feedback-content1">
+          <div class="inner-p">
+            Chiếc xe tôi mua từ trang web này vượt xa mong đợi về cả chất lượng và hiệu suất. Xe chạy rất êm ái, tiết
+            kiệm nhiên liệu và bền bỉ. Mức giá đưa ra hoàn toàn hợp lý so với chất lượng nhận được. Tôi rất hài lòng và
+            tin rằng đây là lựa chọn mua sắm tuyệt vời nhất từ trước đến nay.
+          </div>
+          <div class="inner-athor">
+            Nguyễn Khánh Sơn
+          </div>
+          <div class="inner-it">Student UTCIT</div>
+        </div>
+        <div class="inner-content col-10" id="feedback-content2">
+          <div class="inner-p">
+            Khi mua xe tại đây, tôi hoàn toàn yên tâm về chất lượng nhờ những thương hiệu uy tín mà họ cung cấp. Quá
+            trình mua xe diễn ra rất thuận lợi, từ việc chọn xe đến hoàn tất thủ tục. Đặc biệt, sự hỗ trợ của đội ngũ
+            nhân viên rất chuyên nghiệp và nhiệt tình, mang đến trải nghiệm tuyệt vời.
+          </div>
+          <div class="inner-athor">
+            Nguyễn Đăng Trung
+          </div>
+          <div class="inner-it">Student UTCIT</div>
+        </div>
+        <div class="inner-content col-10" id="feedback-content3">
+          <div class="inner-p">
+            Tôi đã rất bất ngờ với mức giá cạnh tranh và những ưu đãi hấp dẫn khi mua xe tại đây. Không chỉ nhận được
+            một chiếc xe chất lượng cao, tôi còn được hỗ trợ nhiệt tình sau khi mua. Sự kết hợp giữa giá tốt và dịch vụ
+            tuyệt vời khiến tôi cực kỳ hài lòng với quyết định mua xe của mình.
+          </div>
+          <div class="inner-athor">
+            Lê Xuân Thành
+          </div>
+          <div class="inner-it">Student UTCIT</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- end section5  -->
   <!-- section end  -->
   <section class="section-end">
     <div class="container">
