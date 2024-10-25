@@ -2,6 +2,7 @@ let checkName = /^[a-zA-ZÀ-ỹ.]{2,}$/;
 let checkEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 let checkPhone = /^(0[3|5|7|8|9])+([0-9]{8})$/;
 
+
 // Kiểm tra chuỗi có rỗng hay không
 function checkNull(text) {
   return text.value.trim().length === 0;

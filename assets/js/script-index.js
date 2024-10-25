@@ -43,60 +43,22 @@ function show1() {
 
 
 // section5-feedback 
-// let feedback0 = document.querySelector(".section-5 #feedback-content0");
-// let feedback1 = document.querySelector(".section-5 #feedback-content1");
-// let feedback2 = document.querySelector(".section-5 #feedback-content2");
-// let feedback3 = document.querySelector(".section-5 #feedback-content3");
-// var feedback  =[feedback0,feedback1,feedback2,feedback3];
-// let indexFeedback = 1;
-// // var feedback = [feedback0,feedback1,feedback2,feedback3];
-// feedback0.addEventListener('click',feebackChange());
-// function feebackChange(){
-  
-// }
-
-// let feedback0 = document.querySelector(".section-5 #feedback-content0");
-// let feedback1 = document.querySelector(".section-5 #feedback-content1");
-// let feedback2 = document.querySelector(".section-5 #feedback-content2");
-// let feedback3 = document.querySelector(".section-5 #feedback-content3");
-// var feedback = [feedback0, feedback1, feedback2, feedback3];
-// var i = 0; // Bắt đầu từ feedback đầu tiên
-
-
-// feedback[i].addEventListener('click',changeFeedback);
-// function changeFeedback(){
-//   feedback0.style.display = 'none';
-
-// }
 let feedback0 = document.querySelector(".section-5 #feedback-content0");
 let feedback1 = document.querySelector(".section-5 #feedback-content1");
 let feedback2 = document.querySelector(".section-5 #feedback-content2");
 let feedback3 = document.querySelector(".section-5 #feedback-content3");
-var feedback = [feedback0, feedback1, feedback2, feedback3];
-var currentIndex = 0; // Bắt đầu từ phần tử đầu tiên
+let feedback4 = document.querySelector(".section-5 #feedback-content4");
 
-// Ẩn tất cả phản hồi ngoại trừ phản hồi đầu tiên
-for (let j = 1; j < feedback.length; j++) {
-  feedback[j].style.display = 'none';
-}
-
-// Định nghĩa hàm changeFeedback
+var feedback = [feedback0, feedback1, feedback2, feedback3,feedback4];
+var currentIndex = 0;
 function changeFeedback() {
-  // Ẩn phản hồi hiện tại
   feedback[currentIndex].style.display = 'none';
-
-  // Cập nhật chỉ số phần tử tiếp theo
-  currentIndex = (currentIndex + 1) % feedback.length; // Quay lại 0 nếu vượt quá số lượng phần tử
-
-  // Hiển thị phản hồi tiếp theo
+  currentIndex = (currentIndex + 1) ;
+  if(currentIndex > feedback.length-1){
+    currentIndex  = 0;
+  }
   feedback[currentIndex].style.display = 'block';
 }
-
-// Thêm sự kiện click cho phần tử đầu tiên
 feedback[currentIndex].addEventListener('click', changeFeedback);
-
-// Sử dụng setInterval để tự động chuyển đổi phản hồi
-setInterval(changeFeedback, 2000);
-
-
+setInterval(changeFeedback, 4000);
 // end section5-feedback 
