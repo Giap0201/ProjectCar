@@ -1,62 +1,63 @@
-let checkName = /^[a-zA-ZÀ-ỹ.]{2,}$/;
-let checkEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-let checkPhone = /^(0[3|5|7|8|9])+([0-9]{8})$/;
-
-
-// Kiểm tra chuỗi có rỗng hay không
-function checkNull(text) {
+// check  feedback 
+let checkName = /^[a-zA-ZÀ-ỹ0-9]{2,}$/;
+let checkEmail = /^[a-zA-Z0-9_+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+let checkPhone = /^(0[3|5|7|8|9])([0-9]{8})$/;
+//kiem tra chuoi nhap vao co rong khong
+function checkNull(text){
   return text.value.trim().length === 0;
 }
-
-// Kiểm tra nhập vào có phải là số không
-function isInter(text) {
-  return !isNaN(text.value) && Number.isInteger(parseInt(text.value));
+//kiem tra chuoi nhap vao co phai la so khong
+function checkNumber(text){
+  return !isNaN(text.value) && text.value.trim() !=="";
 }
-let feedback = document.querySelector("#NameFeedback");
-feedback.onsubmit = function(){
-  return validForm(this);
-}
-function validForm(forName) {
-  // Kiểm tra tên không rỗng và theo định dạng
-  if (checkNull(forName.fullname)) {
-    alert("Tên truy cập không được để trống");
+//kiem tra tinh hop le cua bieu mau
+function validForm(forName){
+  if(checkNull(forName.fullname)){
+    alert("Tên không được để trống");
     forName.fullname.focus();
     return false;
-  } else if (!checkName.test(forName.fullname.value)) {
-    alert("Tên chỉ được chứa chữ cái và khoảng trắng, và phải có ít nhất 2 ký tự");
+  }else if(!checkName.test(forName.fullname.value)){
+    alert("Tên truy cập chỉ gồm chữ cái chữ số và có it nhất 2 kí tự!!");
     forName.fullname.focus();
     return false;
   }
-
-  // Kiểm tra email không rỗng và theo định dạng
-  if (checkNull(forName.email)) {
-    alert("Email không được để trống");
+  if(checkNull(forName.email)){
+    alert("Email không được bỏ trống!!");
     forName.email.focus();
     return false;
-  } else if (!checkEmail.test(forName.email.value)) {
-    alert("Email không hợp lệ");
+  }else if(!checkEmail.test(forName.email.value)){
+    alert("Email không hợp lệ!!!");
     forName.email.focus();
     return false;
   }
-
-  // Kiểm tra số điện thoại không rỗng và theo định dạng
-  if (checkNull(forName.phone)) {
-    alert("Số điện thoại không được để trống");
+  if(checkNull(forName.phone)){
+    alert("Số điện thoại không được để trống!!");
     forName.phone.focus();
     return false;
-  } else if (!checkPhone.test(forName.phone.value)) {
-    alert("Số điện thoại không hợp lệ");
+  }else if(!checkPhone.test(forName.phone.value)){
+    alert("Số điện thoại không hợp lệ!!!");
     forName.phone.focus();
     return false;
   }
-
-  // Kiểm tra tin nhắn không rỗng
-  if (checkNull(forName.message)) {
-    alert("Tin nhắn không được để trống");
+  if(checkNull(forName.message)){
+    alert("Hãy để lại tin nhắn cho chúng tôi !!");
+    forName.message.focus();
+    return false;
+  }else if(!checkName.test(forName.message.value)){
+    alert("Tin nhắn phải có ít nhất 2 kí tự!!");
     forName.message.focus();
     return false;
   }
-
-  // Nếu tất cả đều hợp lệ
   return true;
 }
+let checkForm = document.querySelector("#NameFeedback");
+checkForm.addEventListener('submit',function(event){
+  event.preventDefault();
+  if(validForm(this)){
+    this.submit();//de gui di
+    alert("Biểu mẫu đã được gửi!!");
+  }
+});
+
+
+// end checkfeedback 
