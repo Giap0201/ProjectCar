@@ -1,0 +1,147 @@
+body{
+    background-color: #facb01;
+}
+*{
+    box-sizing: border-box;
+    font-family: roboto;
+}
+ /* for smartphone*/
+ [class*="col-"]{
+    width: 100%;
+}
+/* for tablet*/
+@media only screen and (min-width: 500px){
+    .col-s-1{width: 8.33%;}
+    .col-s-2{width: 16.66%;}
+    .col-s-3{width: 25%;}
+    .col-s-4{width: 33.33%;}
+    .col-s-5{width: 41.66%;}
+    .col-s-6{width: 50%;}
+    .col-s-7{width: 58.33%;}
+    .col-s-8{width: 66.66%;}
+    .col-s-9{width: 75%;}
+    .col-s-10{width: 83.33%;}
+    .col-s-11{width: 91.66%;}
+    .col-s-12{width: 100%;}
+}
+/* for computer*/
+@media only screen and (min-width: 1000px) {
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;} 
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+article{
+    min-width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    top: 30px;
+    text-align: center;
+}
+h3{
+    font-size: 35px;
+    margin: 20px;
+}
+.img{
+    display: block;
+    justify-content: center;
+    width: 100%;
+}
+.infor{
+    height: 45px;
+    border-radius: 7px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid;
+}
+.box{
+    padding: 10px 0 10px 0;
+}
+.signupbutton{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    background-color: #271756;
+    border-radius: 10px;
+    color: #facb01;
+    border: 0;
+    cursor: pointer;
+}
+.signupbutton2:hover{
+    background-color: #402a85;
+}
+.option{
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.option button{
+    width: 115px;
+    height: 40px;
+    color: white;
+    border-radius: 7px;
+    border-width: 0;
+    font-size: 16px
+}
+.option a:first-child button{
+    background-color: rgb(25, 99, 238);
+    cursor: pointer;
+}
+.option a:first-child button:hover{
+    background-color: rgb(117, 165, 255);
+}
+.option a:nth-child(2) button{
+    background-color: rgb(255, 47, 40);
+    cursor: pointer;
+}
+.option a:nth-child(2) button:hover{
+    background-color: rgb(255, 105, 100);
+}
+.option a:last-child button{
+    background-color: black;
+    cursor: pointer;
+}
+.option a:last-child button:hover{
+    background-color: rgb(50, 50, 50);
+}
+.signin{
+    padding: 10px 0 0 0;
+    font-size: 16px;
+}
+.warning{
+    color: red;
+    text-align: left;
+    padding: 5px 0 0 5px;
+    margin: 0px;
+    font-size: 15px;
+    display: none;
+}
+.error {
+    border: 1px solid red;
+    background-color: #fdd;
+}
+.success {
+    border: 1px solid green;
+    background-color: rgb(218, 250, 218);
+}

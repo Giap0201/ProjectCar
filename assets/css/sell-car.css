@@ -1,0 +1,166 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.section-1{
+  padding: 20px 0px;
+  background-color: #FFDD00;
+  width: 100%;
+  margin-top: 62px;
+}
+.section-1 .container .left{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-1 .container .left .inner-logo img{
+  width: 100%;
+  height: auto;
+}
+.section-1 .container .left .inner-title{
+  font-size: 50px;
+  font-weight: bold;
+  height: 40%;
+}
+.section-1 .container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  /* align-items: center; */
+}
+.section-1 .container .right{
+  height: 100%;
+  background-color: #fff;
+  width: 60%;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 30px 0px;
+}
+.section-1 .container .right .inner-righttop{
+  background-color: #F2F4FA;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 5px 0px;
+}
+.section-1 .container .right .inner-righttop p
+{
+  font-weight: bold;
+}
+.section-1 .container .right .inner-righttop {
+ text-align: center;
+}
+.section-1 .container .right .inner-desc{
+  width: 80%;
+  margin: 0 auto;
+}
+.section-1 .container .right .inner-desc p{
+ font-size: 35px;
+ color: #081F4D;
+ width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: center;
+}
+.section-1 .container .right .inner-form form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.section-1 .container .right .inner-form form div{
+  width: 40%;
+  margin: 10px 0px;
+}
+.section-1 .container .right .inner-form form .btn{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #FFDD00;
+  margin-bottom: 10px;
+}
+.section-1 .container .right .inner-form div p{
+  text-align: left;
+  font-size: 14px;
+  color: red;
+  margin-top: 5px;
+  display: none;
+ }
+.section-1 .container .right .inner-form form .btn:hover{
+  background-color: #9B7FFF;
+}
+
+.section-1 .container .right .inner-form form div input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+.section-1 .container .right .inner-clause{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-1 .container .right .inner-clause a{
+  text-decoration: none;
+  color: #0094FF;
+}
+.section-1 .container .right .inner-clause a:hover{
+  text-decoration: underline;
+}
+@media (max-width: 1023.98px){
+  div.hidden{
+    background-color: #fff;
+    padding-top: 0px;
+  }
+  .section-1 .container .left{
+    width: 100vw; 
+    background-color: #FFDD00;
+    flex-direction: row;
+    align-items: center;
+  }
+  .section-1 .container{
+    flex-wrap: wrap;
+    margin: 0px;
+    width:100%;
+    display: block;
+    padding: 0px
+    /* margin: 0 auto; */
+  }
+  .section-1 .container .right{
+    height: 100%;
+    background-color: #fff;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .section-1 .container .left .inner-title{
+    font-size: 30px;
+    font-weight: bold;
+    height: 40%;
+    width: 40%;
+    padding-left: 20px;
+  }
+  .section-1 .container .left .inner-logo{
+    width: 55%;
+  }
+  .section-1 .container .right .inner-desc p{
+    font-size: 18px;
+   }
+   .section-1 .container .right .inner-form form div{
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .section-1 .container .right .inner-form form .btn{
+    margin-top: 10px;
+  }
+}
+@media (max-width: 639.98px){
+  .section-1 .container .left .inner-title{
+    font-size: 18px;
+  }
+}
