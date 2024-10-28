@@ -76,6 +76,8 @@ function validform(event) {
         alert('Vui lòng kiểm tra lại!');
     }
     else {
+        window.location.href = "signup.html";
         alert('Đăng ký thành công!');
+        
     }
 }
