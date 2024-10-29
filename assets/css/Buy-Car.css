@@ -6,7 +6,6 @@ body {
 }
 
 .car-list {
-  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -135,3 +134,53 @@ h4 {
   color: white;
 }
 
+/* search */
+.container1 {
+  max-width: 100%;
+  margin: 67px auto 50px;
+  padding: 20px;
+  background-color: #f2f4fa;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  top: 20%;
+  padding-left: 5px;
+  color: lightblue;
+  transition: opacity 0.3s;
+}
+.search {
+  width: 100%;
+  padding: 10px 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.filter-btn:hover {
+  background-color: orange;
+  color: #fff;
+}
+/* end search */
