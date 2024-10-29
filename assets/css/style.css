@@ -39,7 +39,7 @@
 
 .header .inner-menu ul li {
   transition: all 0.6s;
-  padding: 20px;
+  padding: 20px 30px;
   text-align: center;
 }
 
@@ -107,7 +107,7 @@ a:hover {
 /* end section 0  */
 /* section1  */
 .section1 {
-  background-image: url(../image/gioithieu1.jpg);
+  background-image: url(../image/HomePage/gioithieu1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -377,6 +377,8 @@ button:hover {
 .section3 .inner-header {
   color: #FFA500;
   font-size: 40px;
+  overflow: hidden;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
   font-weight: 600;
@@ -576,7 +578,7 @@ button:hover {
 
 /* section 5  */
 .section-5 {
-  background-image: url(../image/feedback.jpg);
+  background-image: url(../image/HomePage/feedback.jpg);
   padding: 100px 0px;
   background-repeat: no-repeat;
   background-position: center;
@@ -598,7 +600,7 @@ button:hover {
   font-style: italic;
 }
 .section-5 .inner-content {
-  background-image: url(../image/feback.png);
+  background-image: url(../image/HomePage/feback.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -820,7 +822,7 @@ footer p {
   }
 
   .header .inner-menu ul li {
-    padding: 20px 10px;
+    padding: 20px 15px;
   }
   /* end header  */
 }
@@ -839,9 +841,6 @@ footer p {
   }
   .header .inner-list #togger{
     display: none;
-  }
-  .header .inner-menu ul li {
-    padding: 20px 8px;
   }
   .header {
     font-size: 17px;

@@ -1,7 +1,7 @@
 
 body {
   background-color: #f2f4fa;
-  font-family: SFProDisplay-Bold, Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
   margin: 0 auto;
 }
 
@@ -40,9 +40,10 @@ body {
 }
 
 .price {
-  color: #ff5733;
+  color: red;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1;
 }
 
 h4 {

@@ -1,7 +1,7 @@
 /* feedback  */
 .feedback {
   color: #fff;
-  background-color: #363C3F;
+  background-image: url(../image/HomePage/Background.png);
   padding: 100px 0;
   padding-bottom: 50px;
 }
@@ -13,6 +13,8 @@
   text-align: center;
   padding-bottom: 20px;
   margin-bottom: 50px;
+  color: #fff;
+  overflow: hidden;
   border-bottom: 1px solid #fff;
 }
 .feedback .feedback1{

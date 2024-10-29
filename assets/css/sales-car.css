@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  font-family: "DM Sans", sans-serif;
 }
 .section-1{
   padding: 20px 0px;
@@ -92,7 +93,7 @@
   display: none;
  }
 .section-1 .container .right .inner-form form .btn:hover{
-  background-color: #9B7FFF;
+  background-color: orange;
 }
 
 .section-1 .container .right .inner-form form div input{
