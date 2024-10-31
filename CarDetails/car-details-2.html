@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google-site-verification" content="KXh0H5OCvcTrCHAlOGCqFhsceHrqeVh6dFBjbNjtKpU" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/car-details.css">
+
+  <title>UTCAR</title>
+</head>
+
+<body>
+
+  <!-- header  -->
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="inner-main">
+            <div class="inner-logo">
+              <a href="../index.html">
+                <img src="../assets/image/HomePage/Logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="inner-menu">
+              <ul>
+                <li>
+                  <a href="../index.html">Trang Chủ</a>
+                </li>
+                <li>
+                  <a href="../introduction.html">Giới Thiệu</a>
+                </li>
+                <li>
+                  <a href="../Buy-Car.html">Mua Xe</a>
+                </li>
+                <li>
+                  <a href="../call-selling.html">Bán Xe</a>
+                </li>
+                <li>
+                  <a href="../contact.html">Liên Hệ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="inner-contact">
+              <i class="fa-solid fa-phone"></i>
+              <div class="inner-phone">023321312</div>
+            </div>
+            <div class="inner-dn">
+
+              <a href="../signin.html"><i class="fa-regular fa-circle-user"></i></a>
+              <a href="../signin.html" class="inner-sign">Đăng Nhập</a>
+            </div>
+            <div class="inner-list">
+              <a href="../contact.html"><i class="fa-solid fa-phone"></i></a>
+              <a href="../signin.html"><i class="fa-regular fa-circle-user"></i></a>
+              <i class="fa-solid fa-bars" id="togger"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="inner-menu an">
+            <ul>
+              <li>
+                <a href="../index.html">Trang Chủ</a>
+              </li>
+              <li>
+                <a href="../introduction.html">Giới Thiệu</a>
+              </li>
+              <li>
+                <a href="../Buy-Car.html">Mua Xe</a>
+              </li>
+              <li>
+                <a href="../call-selling.html">Bán Xe</a>
+              </li>
+              <li>
+                <a href="../contact.html">Liên Hệ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header  -->
+  <div class="container-car">
+    <!-- Left Section with Image Carousel and Navigation -->
+    <div class="left-section">
+      <img src="../assets/image/BuyCar/CarImg/2/1.JPG" alt="Kia Carens" id="main-image">
+      <div class="image-nav">
+        <button id="prev-btn">&#10094; Prev</button>
+        <button id="next-btn">Next &#10095;</button>
+      </div>
+      <div class="thumbnails">
+        <img src="../assets/image/BuyCar/CarImg/2/1.JPG" alt="Thumb 1"
+          onclick="changeImage('../assets/image/BuyCar/CarImg/2/1.JPG', 0)">
+        <img src="../assets/image/BuyCar/CarImg/2/2.JPG" alt="Thumb 2"
+          onclick="changeImage('../assets/image/BuyCar/CarImg/2/2.JPG', 1)">
+        <img src="../assets/image/BuyCar/CarImg/2/3.JPG" alt="Thumb 3"
+          onclick="changeImage('../assets/image/BuyCar/CarImg/2/3.JPG', 2)">
+        <img src="../assets/image/BuyCar/CarImg/2/4.JPG" alt="Thumb 4"
+          onclick="changeImage('../assets/image/BuyCar/CarImg/2/4.JPG', 3)">
+        <img src="../assets/image/BuyCar/CarImg/2/5.JPG" alt="Thumb 5"
+          onclick="changeImage('../assets/image/BuyCar/CarImg/2/5.JPG', 4)">
+      </div>
+    </div>
+    <!-- Right Section with Car Details and Icons -->
+    <div class="car-details">
+      <span class="certified-badge"> <img class="logo" src="../assets/image/HomePage/Logo.png" alt=""> Chứng nhận
+        UTCar</span>
+      <h2 style="margin-top: 8px;">Kia Sonet Premium 1.5 AT</h2>
+      <div class="price">560.000.000 đ</div>
+      <div class="monthly-info">Chỉ từ 5.3 triệu / tháng</div>
+
+      <div class="specs">
+        <div class="icon-text">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>26.000 km</span>
+        </div>
+        <div>
+          <i class="fas fa-users"></i>
+          <span>5 chỗ</span>
+        </div>
+        <div class="icon-text">
+          <i class="fas fa-gas-pump"></i>
+          <span>Xăng</span>
+        </div>
+        <div>
+          <i class="fas fa-cogs"></i>
+          <span>CVT</span>
+        </div>
+        <div class="icon-text">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Biển Hà Nội</span>
+        </div>
+        <div>
+          <i class="fas fa-map-pin"></i>
+          <span>Hà Nội</span>
+        </div>
+        <div>
+          <A href="#overview">Xem toàn bộ thông số</A>
+        </div>
+      </div>
+
+      <div class="cta-buttons">
+        <button><a href="#"><i class="fas fa-car"></i> Đăng ký lái thử </a></button>
+        <button><i class="fas fa-phone"></i> Gọi cho tôi</button>
+      </div>
+
+      <div class="lienhe">
+        <div class="hotline">
+          Hotline: <strong>0825 355 355</strong>
+        </div>
+
+        <div class="contact">
+          Liên hệ qua: <a href="https://www.facebook.com/profile.php?id=100089704514419"><i class="fas fa-comments"></i>
+            Facebook</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Car Overview Table -->
+    <div class="overview" id="overview">
+      <h3>Tổng quan về xe</h3>
+      <div class="overview-grid">
+        <div class="overview-item">
+          <i class="fas fa-gas-pump"></i>
+          <div>
+            <span>Nhiên liệu</span>
+            <small>Xăng</small>
+          </div>
+        </div>
+
+        <div class="overview-item">
+          <i class="fas fa-road"></i>
+          <div class="gap">
+            <span>Odometer</span>
+            <small>30.000 km</small>
+          </div>
+        </div>
+
+        <div class="overview-item">
+          <i class="fas fa-chair"></i>
+          <div class="gap">
+            <span>Số ghế</span>
+            <small>5</small>
+          </div>
+        </div>
+
+        <div class="overview-item">
+          <i class="fas fa-car-side"></i>
+          <div>
+            <span>Kiểu dáng</span>
+            <small>SUV</small>
+          </div>
+        </div>
+
+        <div class="overview-item">
+          <i class="fas fa-cogs"></i>
+          <div>
+            <span>Phiên bản</span>
+            <small>1.5 AT</small>
+          </div>
+        </div>
+
+        <div class="overview-item">
+          <i class="fas fa-calendar-alt"></i>
+          <div>
+            <span>Năm sản xuất</span>
+            <small>2024</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section end  -->
+  <section class="section-end">
+    <div class="container">
+      <div class="row box1">
+        <div class="inner-news col-xl-5 col-lg-5 col-md-5 col-sm-12">
+          <h3 class="inner-sub">đăng kí nhận bản tin của chúng tôi</h3>
+          <p class="inner-desc">Nhận những ưu đãi mới nhất, chương trình khuyến mãi & nhiều quyền lợi độc quyền trực
+            tiếp vào hòm thư của bạn</p>
+        </div>
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+          <form action="#">
+            <div class="row">
+              <div class="inner-email col-xl-8 col-lg-12">
+                <input type="email" name="email" id="email" placeholder="Nhập email của bạn">
+              </div>
+              <div class="inner-button col-xl-4 col-lg-12">
+                <button type="submit">Đăng kí</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section end  -->
+
+  <!-- end  -->
+  <section class="end">
+    <div class="container">
+      <div class="row box">
+        <div class="inner-logo col-xl-5 col-lg-5 col-md-5 col-sm-12">
+          <a href="../index.html">
+            <div class="inner-image">
+              <img src="../assets/image/HomePage/Logo.png" alt="logo">
+            </div>
+          </a>
+          <p class="inner-desc">UTCAR là nền tảng mua bán xe ô tô đã qua sử dụng lớn nhất Việt Nam</p>
+        </div>
+        <div class="inner-sevice col-xl-3 col-lg-3 col-md-3 col-sm-4">
+          <p class="iner-desc">Dịch Vụ</p>
+          <a href="../index.html">Trang chủ</a>
+          <a href="../Buy-Car.html">Mua xe</a>
+          <a href="../call-selling.html">Bán xe</a>
+          <a href="../introduction.html">Giới thiệu</a>
+          <a href="../contact.html">Liên hệ</a>
+        </div>
+        <div class="inner-contact col-xl-4 col-lg-4 col-md-4 col-sm-8">
+          <p class="iner-desc">Liên Hệ</p>
+          <div class="row inner-row">
+            <i class="fa-solid fa-location-dot inner-icon col-xl-4 col-lg-4 col-md-4 col-4"></i>
+            <div class="inner-name col-xl-8 col-lg-8 col-md-8 col-8">My company UTCAR</div>
+          </div>
+          <div class="row inner-row">
+            <i class="fa-solid fa-phone-volume inner-icon col-xl-4 col-lg-4 col-md-4 col-4"></i>
+            <div class="inner-name col-xl-8 col-lg-8 col-md-8 col-8">043243254</div>
+          </div>
+          <div class="row inner-row">
+            <i class="fa-regular fa-envelope inner-icon col-xl-4 col-lg-4 col-md-4 col-4"></i>
+            <div class="inner-name col-xl-8 col-lg-8 col-md-8 col-8">utcal@gmail.com</div>
+          </div>
+          <div class="row inner-row">
+            <i class="fa-regular fa-clock inner-icon col-xl-4 col-lg-4 col-md-4 col-4"></i>
+            <div class="inner-name col-xl-8 col-lg-8 col-md-8 col-8">7 Days a week from 9:00 am to 7:00 pm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end end  -->
+  <!-- footer  -->
+  <footer class="footer">
+    <p>© 2024. Copyright by UTCAR
+    </p>
+  </footer>
+  <!-- end footer  -->
+  <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../assets/bootstrap/jquery.slim.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const images = [
+        '../assets/image/BuyCar/CarImg/2/1.JPG',
+        '../assets/image/BuyCar/CarImg/2/2.JPG',
+        '../assets/image/BuyCar/CarImg/2/3.JPG',
+        '../assets/image/BuyCar/CarImg/2/4.JPG',
+        '../assets/image/BuyCar/CarImg/2/5.JPG'
+      ];
+
+      let currentIndex = 0;
+      const mainImage = document.getElementById('main-image');
+      const thumbnails = document.querySelectorAll('.thumbnails img');
+      const prevButton = document.getElementById('prev-btn');
+      const nextButton = document.getElementById('next-btn');
+
+      // Hàm cập nhật ảnh chính và highlight thumbnail
+      function updateImage(index) {
+        mainImage.src = images[index];
+        thumbnails.forEach((thumb, i) => {
+          thumb.classList.toggle('active', i === index); // Highlight thumbnail hiện tại
+        });
+      }
+
+      // Chuyển sang ảnh trước
+      function prevImage() {
+        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        updateImage(currentIndex);
+      }
+
+      // Chuyển sang ảnh kế tiếp
+      function nextImage() {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        updateImage(currentIndex);
+      }
+
+      // Chuyển đổi ảnh khi nhấn vào thumbnail
+      function changeImage(imageUrl, index) {
+        currentIndex = index;
+        updateImage(currentIndex);
+      }
+
+      prevButton.addEventListener('click', prevImage);
+      nextButton.addEventListener('click', nextImage);
+
+      // Gán sự kiện click cho từng thumbnail để thay đổi ảnh
+      thumbnails.forEach((thumb, index) => {
+        thumb.addEventListener('click', () => changeImage(images[index], index));
+      });
+
+      // Hiển thị ảnh đầu tiên khi tải trang
+      updateImage(currentIndex);
+    });
+  </script>
+</body>
+
+</html
