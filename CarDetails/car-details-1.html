@@ -28,26 +28,26 @@
         <div class="col-12">
           <div class="inner-main">
             <div class="inner-logo">
-              <a href="index.html">
+              <a href="../index.html">
                 <img src="../assets/image/HomePage/Logo.png" alt="logo">
               </a>
             </div>
             <div class="inner-menu">
               <ul>
                 <li>
-                  <a href="index.html" class="active">Trang Chủ</a>
+                  <a href="../index.html">Trang Chủ</a>
                 </li>
                 <li>
-                  <a href="introduction.html">Giới Thiệu</a>
+                  <a href="../introduction.html">Giới Thiệu</a>
                 </li>
                 <li>
-                  <a href="Buy-Car.html">Mua Xe</a>
+                  <a href="../Buy-Car.html">Mua Xe</a>
                 </li>
                 <li>
-                  <a href="call-selling.html">Bán Xe</a>
+                  <a href="../call-selling.html">Bán Xe</a>
                 </li>
                 <li>
-                  <a href="contact.html">Liên Hệ</a>
+                  <a href="../contact.html">Liên Hệ</a>
                 </li>
               </ul>
             </div>
@@ -57,12 +57,12 @@
             </div>
             <div class="inner-dn">
 
-              <a href="signup.html"><i class="fa-regular fa-circle-user"></i></a>
-              <a href="signup.html" class="inner-sign">Đăng Nhập</a>
+              <a href="../signin.html"><i class="fa-regular fa-circle-user"></i></a>
+              <a href="../signin.html" class="inner-sign">Đăng Nhập</a>
             </div>
             <div class="inner-list">
-              <a href="contact.html"><i class="fa-solid fa-phone"></i></a>
-              <a href="signup.html"><i class="fa-regular fa-circle-user"></i></a>
+              <a href="../contact.html"><i class="fa-solid fa-phone"></i></a>
+              <a href="../signin.html"><i class="fa-regular fa-circle-user"></i></a>
               <i class="fa-solid fa-bars" id="togger"></i>
             </div>
           </div>
@@ -71,19 +71,19 @@
           <div class="inner-menu an">
             <ul>
               <li>
-                <a href="index.html" class="active">Trang Chủ</a>
+                <a href="../index.html">Trang Chủ</a>
               </li>
               <li>
-                <a href="introduction.html">Giới Thiệu</a>
+                <a href="../introduction.html">Giới Thiệu</a>
               </li>
               <li>
-                <a href="Buy-Car.html">Mua Xe</a>
+                <a href="../Buy-Car.html">Mua Xe</a>
               </li>
               <li>
-                <a href="call-selling.html">Bán Xe</a>
+                <a href="../call-selling.html">Bán Xe</a>
               </li>
               <li>
-                <a href="contact.html">Liên Hệ</a>
+                <a href="../contact.html">Liên Hệ</a>
               </li>
             </ul>
           </div>
@@ -97,23 +97,27 @@
     <div class="left-section">
       <img src="../assets/image/BuyCar/CarImg/1/1.JPG" alt="Kia Carens" id="main-image">
       <div class="image-nav">
-        <button id="prev-btn" onclick="prevImage()">&#10094; Prev</button>
-        <button id="next-btn" onclick="nextImage()">Next &#10095;</button>
+        <button id="prev-btn">&#10094; Prev</button>
+        <button id="next-btn">Next &#10095;</button>
       </div>
       <div class="thumbnails">
-        <img src="../assets/image/BuyCar/CarImg/1/1.JPG" alt="Thumb 1" onclick="changeImage('002.webp')">
-        <img src="../assets/image/BuyCar/CarImg/1/2.JPG" alt="Thumb 2" onclick="changeImage('003.webp')">
-        <img src="../assets/image/BuyCar/CarImg/1/3.JPG" alt="Thumb 3" onclick="changeImage('004.webp')">
-        <img src="../assets/image/BuyCar/CarImg/1/4.JPG" alt="Thumb 4" onclick="changeImage('005.webp')">
-        <img src="../assets/image/BuyCar/CarImg/1/5.JPG" alt="Thumb 5" onclick="changeImage('006.webp')">
+        <img src="../assets/image/BuyCar/CarImg/1/1.JPG" alt="Thumb 1"
+          onclick="changeImage('../assets/image/BuyCar/CarImg/1/1.JPG', 0)">
+        <img src="../assets/image/BuyCar/CarImg/1/2.JPG" alt="Thumb 2"
+          onclick="changeImage('../assets/image/BuyCar/CarImg/1/2.JPG', 1)">
+        <img src="../assets/image/BuyCar/CarImg/1/3.JPG" alt="Thumb 3"
+          onclick="changeImage('../assets/image/BuyCar/CarImg/1/3.JPG', 2)">
+        <img src="../assets/image/BuyCar/CarImg/1/4.JPG" alt="Thumb 4"
+          onclick="changeImage('../assets/image/BuyCar/CarImg/1/4.JPG', 3)">
+        <img src="../assets/image/BuyCar/CarImg/1/5.JPG" alt="Thumb 5"
+          onclick="changeImage('../assets/image/BuyCar/CarImg/1/5.JPG', 4)">
       </div>
     </div>
-
     <!-- Right Section with Car Details and Icons -->
     <div class="car-details">
-      <span class="certified-badge"> <img class="logo" src="Logo-Dai-Hoc-Giao-Thong-Van-Tai-UTC.png" alt=""> Chứng nhận
+      <span class="certified-badge"> <img class="logo" src="../assets/image/HomePage/Logo.png" alt=""> Chứng nhận
         UTCar</span>
-      <h2>Kia Sonet Mazda CX-5 Luxury 2.0 AT - 2021</h2>
+      <h2 style="margin-top: 8px;">Kia Sonet Mazda CX-5 Luxury 2.0 AT - 2021</h2>
       <div class="price">705.000.000 đ</div>
       <div class="monthly-info">Chỉ từ 5.3 triệu / tháng</div>
 
@@ -148,7 +152,7 @@
       </div>
 
       <div class="cta-buttons">
-        <button><a href="dangkilaithu.html"><i class="fas fa-car"></i> Đăng ký lái thử </a></button>
+        <button><a href="#"><i class="fas fa-car"></i> Đăng ký lái thử </a></button>
         <button><i class="fas fa-phone"></i> Gọi cho tôi</button>
       </div>
 
@@ -249,7 +253,7 @@
     <div class="container">
       <div class="row box">
         <div class="inner-logo col-xl-5 col-lg-5 col-md-5 col-sm-12">
-          <a href="index.html">
+          <a href="../index.html">
             <div class="inner-image">
               <img src="../assets/image/HomePage/Logo.png" alt="logo">
             </div>
@@ -258,11 +262,11 @@
         </div>
         <div class="inner-sevice col-xl-3 col-lg-3 col-md-3 col-sm-4">
           <p class="iner-desc">Dịch Vụ</p>
-          <a href="index.html">Trang chủ</a>
-          <a href="Buy-Car.html">Mua xe</a>
-          <a href="call-selling.html">Bán xe</a>
-          <a href="introduction.html">Giới thiệu</a>
-          <a href="contact.html">Liên hệ</a>
+          <a href="../index.html">Trang chủ</a>
+          <a href="../Buy-Car.html">Mua xe</a>
+          <a href="../call-selling.html">Bán xe</a>
+          <a href="../introduction.html">Giới thiệu</a>
+          <a href="../contact.html">Liên hệ</a>
         </div>
         <div class="inner-contact col-xl-4 col-lg-4 col-md-4 col-sm-8">
           <p class="iner-desc">Liên Hệ</p>
@@ -296,7 +300,60 @@
   <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="../assets/bootstrap/jquery.slim.min.js"></script>
   <script src="../assets/js/script.js"></script>
-  <script src="../assets/js/car-details.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const images = [
+        '../assets/image/BuyCar/CarImg/1/1.JPG',
+        '../assets/image/BuyCar/CarImg/1/2.JPG',
+        '../assets/image/BuyCar/CarImg/1/3.JPG',
+        '../assets/image/BuyCar/CarImg/1/4.JPG',
+        '../assets/image/BuyCar/CarImg/1/5.JPG'
+      ];
+
+      let currentIndex = 0;
+      const mainImage = document.getElementById('main-image');
+      const thumbnails = document.querySelectorAll('.thumbnails img');
+      const prevButton = document.getElementById('prev-btn');
+      const nextButton = document.getElementById('next-btn');
+
+      // Hàm cập nhật ảnh chính và highlight thumbnail
+      function updateImage(index) {
+        mainImage.src = images[index];
+        thumbnails.forEach((thumb, i) => {
+          thumb.classList.toggle('active', i === index); // Highlight thumbnail hiện tại
+        });
+      }
+
+      // Chuyển sang ảnh trước
+      function prevImage() {
+        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        updateImage(currentIndex);
+      }
+
+      // Chuyển sang ảnh kế tiếp
+      function nextImage() {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        updateImage(currentIndex);
+      }
+
+      // Chuyển đổi ảnh khi nhấn vào thumbnail
+      function changeImage(imageUrl, index) {
+        currentIndex = index;
+        updateImage(currentIndex);
+      }
+
+      prevButton.addEventListener('click', prevImage);
+      nextButton.addEventListener('click', nextImage);
+
+      // Gán sự kiện click cho từng thumbnail để thay đổi ảnh
+      thumbnails.forEach((thumb, index) => {
+        thumb.addEventListener('click', () => changeImage(images[index], index));
+      });
+
+      // Hiển thị ảnh đầu tiên khi tải trang
+      updateImage(currentIndex);
+    });
+  </script>
 </body>
 
 </html

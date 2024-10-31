@@ -1,6 +1,6 @@
 body{
     margin: 0 auto;
-    background-image: url(../image/HomePage/Background.png);
+    background-image: url(../image/HomePage/Background.jpg);
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -11,6 +11,7 @@ body{
     box-sizing: border-box;
     font-family: roboto;
 }
+
  /* for smartphone*/
  [class*="col-"]{
     width: 100%;
@@ -46,6 +47,7 @@ body{
     .col-12{width: 100%;} 
 }
 
+
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +62,7 @@ article{
     box-sizing: border-box;
     padding: 20px;
     position: absolute;
-    top: 50px;
+    top: 10px;
     text-align: center;
     box-shadow: 0 0 10px rgb(55, 54, 54);
 }
@@ -87,24 +89,25 @@ h3{
 .signupbutton{
     width: 100%;
     padding: 10px;
-    margin: 10px 0 10px 0;
     font-size: 20px;
     background-color: #271756;
-    border-radius: 10px;
+    border-radius: 7px;
     color: #facb01;
     border: 0;
+    margin: 10px 0 10px 0;
     cursor: pointer;
 }
-.signupbutton2:hover{
+.signupbutton:hover{
     background-color: #402a85;
+}
+form+div{
+    padding: 20px;
 }
 .option{
     padding: 10px 0 10px 0;
-    display: flex;
-    justify-content: space-between;
 }
 .option button{
-    width: 115px;
+    width: 32%;
     height: 40px;
     color: white;
     border-radius: 7px;
@@ -132,9 +135,14 @@ h3{
 .option a:last-child button:hover{
     background-color: rgb(50, 50, 50);
 }
-.signin{
-    padding: 10px 0 0 0;
+.agreebox{
     font-size: 16px;
+    padding: 10px 0 10px 0;
+    text-align: justify;
+}
+.signin{
+    font-size: 16px;
+    padding: 10px;
 }
 .warning{
     color: red;

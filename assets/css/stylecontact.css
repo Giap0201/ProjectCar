@@ -1,9 +1,12 @@
 /* feedback  */
 .feedback {
   color: #fff;
-  background-image: url(../image/HomePage/Background.png);
+  background-image: url(../image/HomePage/Background.jpg);
   padding: 100px 0;
   padding-bottom: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .feedback .inner-feedback{
   padding: 0;
@@ -62,7 +65,15 @@
     width: 100%;
   }
 }
+.feedback .button button{
+  background-color: #0078F9;
+  color: #fff;
+}
 
+.feedback .button button:hover{
+  background-color: orange;
+  
+}
 /* end feedback  */
 
 /* contact */

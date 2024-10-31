@@ -52,10 +52,13 @@ function validForm(forName){
 }
 let checkForm = document.querySelector("#NameFeedback");
 checkForm.addEventListener('submit',function(event){
-  event.preventDefault();
+  
   if(validForm(this)){
     this.submit();//de gui di
     alert("Biểu mẫu đã được gửi!!");
+  }
+  else{
+    event.preventDefault();
   }
 });
 
