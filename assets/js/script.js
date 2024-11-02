@@ -77,3 +77,51 @@ function changeFeedback() {
 feedback[currentIndex].addEventListener('click', changeFeedback);
 setInterval(changeFeedback, 4000);
 // end section5-feedback 
+
+// seach 
+var seach1 = document.querySelector('.seach #timkiem');
+function checkNull1(text){
+  return text.value.trim().length === 0;
+}
+function checkTimKiem1(f){
+  if(checkNull1(f.xe)){
+    alert("Vui lòng nhập tên xe cần tìm!!");
+    f.xe.focus();
+    return false;
+  }
+  return true;
+}
+seach1.addEventListener('submit',function(event){
+  if(checkTimKiem1(this)){
+    this.submit();
+  }
+  else{
+    event.preventDefault();
+  }
+})
+
+// seach salecar 
+function checkSaleCar(f){
+  if(f.chonhang.value == ""){
+    alert("Vui lòng chọn hãng cần tìm!!");
+    f.chonhang.focus();
+    return false;
+  }
+  if(f.chonloai.value == ""){
+    alert("Vui lòng chọn loại xe !!!");
+    f.chonloai.focus();
+    return false;
+  }
+  return true;
+}
+let seach2 = document.querySelector(".seach #banxe");
+seach2.addEventListener('submit',function(event){
+  if(checkSaleCar(this)){
+    this.submit();
+  }
+  else{
+    event.preventDefault();
+  }
+})
+
+// end seach 

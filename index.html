@@ -268,7 +268,7 @@
             <div class="inner-header">
               Bán xe
             </div>
-            <form action="#">
+            <form action="#" id="banxe">
               <div class="selec1">
                 <select name="chonhang" id="chonhang">
                   <option value="">Chọn hãng xe</option>
@@ -977,7 +977,7 @@
           <form action="#">
             <div class="row">
               <div class="inner-email col-xl-8 col-lg-12">
-                <input type="email" name="email" id="email" placeholder="Nhập email của bạn">
+                <input type="email" name="emailcheck" id="email" placeholder="Nhập email của bạn">
               </div>
               <div class="inner-button col-xl-4 col-lg-12">
                 <button type="submit">Đăng kí</button>
@@ -1038,12 +1038,41 @@
     <p>© 2024. Copyright by UTCAR
     </p>
   </footer>
-
   <!-- end footer  -->
+
 
   <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="assets/bootstrap/jquery.slim.min.js"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+    //check footer
+    let checkfooter = document.querySelector(".section-end form");
+    function checkNull(text) {
+      return text.value.trim().length === 0;
+    }
+    let checkEmail = /^[a-zA-Z0-9_+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    function checkValid(forName) {
+      if (checkNull(forName.emailcheck)) {
+        alert("Email không được bỏ trống");
+        forName.emailcheck.focus();
+        return false;
+      } else if (!checkEmail.test(forName.emailcheck.value)) {
+        alert("Email không đúng định dạng");
+        forName.emailcheck.focus();
+        return false;
+      }
+      return true;
+    }
+    checkfooter.addEventListener('submit', function (event) {
+      if (checkValid(this)) {
+        alert("Email đã được gửi đi");
+        this.submit();
+      }
+      else {
+        event.preventDefault();
+      }
+    })
+  </script>
 
 
 </body>

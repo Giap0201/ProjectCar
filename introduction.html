@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Công ty của chúng tôi phát triển với nhiều loại hình ưng ý khác nhau trong thời gian dài">
+  <meta name="description"
+    content="Công ty của chúng tôi phát triển với nhiều loại hình ưng ý khác nhau trong thời gian dài">
   <meta name="author" content="UTCAR">
   <link rel="icon" href="assets/image/HomePage/logotab.png" type="image/png">
   <title>Giới thiệu về UTCar </title>
@@ -194,7 +195,7 @@
           <form action="#">
             <div class="row">
               <div class="inner-email col-xl-8 col-lg-12">
-                <input type="email" name="email" id="email" placeholder="Nhập email của bạn">
+                <input type="email" name="emailcheck" id="email" placeholder="Nhập email của bạn">
               </div>
               <div class="inner-button col-xl-4 col-lg-12">
                 <button type="submit">Đăng kí</button>
@@ -260,6 +261,35 @@
   <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="assets/bootstrap/jquery.slim.min.js"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+    //check footer
+    let checkfooter = document.querySelector(".section-end form");
+    function checkNull(text) {
+      return text.value.trim().length === 0;
+    }
+    let checkEmail = /^[a-zA-Z0-9_+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    function checkValid(forName) {
+      if (checkNull(forName.emailcheck)) {
+        alert("Email không được bỏ trống");
+        forName.emailcheck.focus();
+        return false;
+      } else if (!checkEmail.test(forName.emailcheck.value)) {
+        alert("Email không đúng định dạng");
+        forName.emailcheck.focus();
+        return false;
+      }
+      return true;
+    }
+    checkfooter.addEventListener('submit', function (event) {
+      if (checkValid(this)) {
+        alert("Email đã được gửi đi");
+        this.submit();
+      }
+      else {
+        event.preventDefault();
+      }
+    })
+  </script>
 </body>
 
 </html>

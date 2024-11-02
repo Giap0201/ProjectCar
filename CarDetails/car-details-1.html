@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/car-details.css">
 
- 
+
 </head>
 
 <body>
@@ -356,6 +356,37 @@
       // Hiển thị ảnh đầu tiên khi tải trang
       updateImage(currentIndex);
     });
+  </script>
+  <script>
+    //check footer
+    let checkfooter = document.querySelector(".section-end form");
+    function checkNull(text) {
+      return text.value.trim().length === 0;
+    }
+    let checkEmail = /^[a-zA-Z0-9_+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    function checkValid(forName) {
+      if (checkNull(forName.email)) {
+        alert("Email không được bỏ trống");
+        forName.email.focus();
+        return false;
+      } else if (!checkEmail.test(forName.email.value)) {
+        alert("Email không đúng định dạng");
+        forName.email.focus();
+        return false;
+      }
+      return true;
+    }
+    checkfooter.addEventListener('submit', function (event) {
+      if (checkValid(this)) {
+        alert("Email đã được gửi đi");
+        this.submit();
+      }
+      else {
+        event.preventDefault();
+      }
+    })
+
+
   </script>
 </body>
 

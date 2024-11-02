@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+
   <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -1411,7 +1411,7 @@
           <form action="#">
             <div class="row">
               <div class="inner-email col-xl-8 col-lg-12">
-                <input type="email" name="email" id="email" placeholder="Nhập email của bạn">
+                <input type="email" name="emailcheck" id="email" placeholder="Nhập email của bạn">
               </div>
               <div class="inner-button col-xl-4 col-lg-12">
                 <button type="submit">Đăng kí</button>
@@ -1489,6 +1489,37 @@
         prevEl: ".swiper-button-prev",
       },
     });
+  </script>
+  <script>
+    //check footer
+    let checkfooter = document.querySelector(".section-end form");
+    function checkNull(text) {
+      return text.value.trim().length === 0;
+    }
+    let checkEmail = /^[a-zA-Z0-9_+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    function checkValid(forName) {
+      if (checkNull(forName.emailcheck)) {
+        alert("Email không được bỏ trống");
+        forName.emailcheck.focus();
+        return false;
+      } else if (!checkEmail.test(forName.emailcheck.value)) {
+        alert("Email không đúng định dạng");
+        forName.emailcheck.focus();
+        return false;
+      }
+      return true;
+    }
+    checkfooter.addEventListener('submit', function (event) {
+      if (checkValid(this)) {
+        alert("Email đã được gửi đi");
+        this.submit();
+      }
+      else {
+        event.preventDefault();
+      }
+    })
+
+
   </script>
 </body>
 
